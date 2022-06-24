@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  background-color: lightgray;
+}
+
+/* Parent Grid */
+.container {
+  margin: 5px 5px 0px 5px;
+  height: 885px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main sidebar"
+    "footer footer";
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 0.1fr 0.8fr 1fr;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+
+/* Parent Flex Navbar */
+.navbar {
+  background-color: rgb(177, 67, 166);
+  padding: 2px 0;
+  grid-area: header;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Child Navbar-Logo */
+.logo {
+  padding-left: 25px;
+  flex: 2;
+}
+
+/* Child Navbar-Menu & Parent Flex Menu */
+.navbar-menu {
+  flex: 1;
+  display: flex;
+  padding: 20px auto;
+  margin: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Child Menu-Home */
+.home {
+  flex: 2;
+  background-color: rgb(3, 199, 199);
+  padding: 20px;
+  margin-right: 5px;
+  text-align: center;
+}
+/* Child Menu-About */
+.about {
+  flex: 2;
+  background-color: cadetblue;
+  padding: 20px;
+  margin-right: 5px;
+  text-align: center;
+}
+/* Child Menu-Profile */
+.profile {
+  flex: 2;
+  background-color: cadetblue;
+  padding: 20px;
+  margin-right: 5px;
+  text-align: center;
+}
+/* Child Menu-Contact */
+.contact {
+  flex: 2;
+  background-color: cadetblue;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Parent Sidebar */
+.sidebar {
+  background-color: rgb(255, 129, 129);
+  padding: 0;
+  grid-area: sidebar;
+}
+/* Judul Sidebar */
+.sidebar h3 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding: 20px 0;
+  padding-left: 15px;
+  background-color: rgb(177, 67, 166);
+  display: flex;
+  align-items: flex-start;
+}
+/* Box Parent 1 */
+.box1 {
+  background-color: rgb(82, 147, 149);
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.image {
+  background-color: rgb(3, 199, 199);
+  width: auto;
+  height: 105px;
+  margin-bottom: 10px;
+}
+h4 {
+  margin: 0;
+  padding: 2px 0 6px 10px;
+  align-items: left;
+}
+.box1 p {
+  font-size: small;
+  margin: 0px;
+  padding: 0 2px 10px 10px;
+}
+
+/* Box Parent 2 */
+.box2 {
+  background-color: rgb(82, 147, 149);
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.box2 p {
+  font-size: small;
+  margin: 0px;
+  padding: 0 2px 10px 10px;
+}
+
+/* Box Parent 3 */
+.box3 {
+  background-color: rgb(82, 147, 149);
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+.box3 p {
+  font-size: small;
+  margin: 0px;
+  padding: 0 2px 10px 10px;
+}
+
+/* Child Grid Content */
+main {
+  background-color: rgb(255, 129, 129);
+  box-sizing: border-box;
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: main;
+}
+
+/* Child Grid Footer */
+.footer {
+  background-color: rgb(46, 46, 46);
+  height: 10px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  text-size-adjust: small;
+  align-items: center;
+  grid-area: footer;
+}
+.footer p {
+  font-size: small;
+}
